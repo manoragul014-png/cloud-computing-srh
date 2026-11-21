@@ -6,7 +6,7 @@ variable "project_id" {
 variable "region" {
   description = "Where your resources live. europe-west3 is Frankfurt."
   type        = string
-  default     = "europe-west3"
+  default     = "europe-west1"
 }
 
 variable "neighbour_email" {
