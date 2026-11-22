@@ -7,7 +7,7 @@ Proposed
 Date: 2026-11-21
 
 ## Context
-Our launch customer is Alpine Outdoor (SHP01), which transports outdoor products by ocean freight.
+My launch customer is Alpine Outdoor (SHP01), which transports outdoor products by ocean freight.
 
 The platform must meet three targets:
 - **Freshness:** Data updated within 15 minutes.
@@ -27,7 +27,7 @@ Two lanes miss the reliability target. The platform needs timely shipment inform
 2. **Kappa Architecture:** Uses one streaming-first processing pipeline. Supports timely updates with less duplicated processing logic, but requires reliable event handling and replay.
 
 ## Decision
-We chose **Kappa Architecture** for the proposed design because the customer requires updates within 15 minutes and has a limited $20 monthly budget.
+I chose **Kappa Architecture** for the proposed design because the customer requires updates within 15 minutes and has a limited $20 monthly budget.
 
 A single event-driven processing path can support timely monitoring without maintaining separate batch and streaming pipelines.
 
